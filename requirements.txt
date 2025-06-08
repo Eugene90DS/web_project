@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+transformers
+torch
+psycopg2-binary
+kafka-python
+jinja2
+pdfkit

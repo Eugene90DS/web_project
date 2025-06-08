@@ -1,0 +1,15 @@
+
+<html>
+  <body>
+    <h1>Акт по обращению</h1>
+    <p>Тип проблемы: {{ payload.category }}</p>
+    <p>Описание: {{ payload.text }}</p>
+    <p>Маршрут: {{ payload.route_id }}</p>
+    <p>Контакты:</p>
+    <ul>
+    {% for contact in payload.contacts %}
+      <li>{{ contact.name }} — {{ contact.phone }} (приоритет {{ contact.priority }})</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
